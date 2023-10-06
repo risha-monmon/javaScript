@@ -1,0 +1,48 @@
+/* reset code starting */
+*{
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 0.2rem;
+    flex-wrap: wrap;
+}
+/* reset code ending */
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(17, 17, 133);
+}
+/* posts start */
+.posts{
+    width: 100%;
+    background-color: rgb(132, 236, 236);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.post{
+    width:23% ;
+    background-color: bisque;
+    margin-top: 0.4rem;
+    box-shadow: 0 4px 8px 0 rgba(253, 250, 250, 0.968);
+    padding: 1rem;
+    transition: 0.4s;
+}
+h4{
+    color:rgb(124, 12, 12);
+    font-style: oblique;
+    font-variant: small-caps;
+    
+}
+.post:hover{
+    box-shadow: 0 8px 16px 0 rgba(18, 4, 4, 0.2);
+background-color: rgb(247, 178, 192);
+}
+/* responsive( verity create base on large and small screen) */
+@media screen and (max-width:992px ) {
+    .post{width: 48%;}
+    
+}
+@media screen and (max-width:600px ) {
+    .post{width: 100%;}
+    
+}
